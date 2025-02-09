@@ -1,6 +1,6 @@
 [build]
   # Tell Netlify to use the public folder as the root directory for serving files
-  publish = "public"
+  publish = "./public/public"
 
   # Optional: If you need to run a build command, add it here (e.g., for compiling assets)
   command = "echo 'no build'"
