@@ -1,0 +1,7 @@
+[build]
+  publish = "mpp"
+  command = "echo 'No build command'"
+
+[[redirects]]
+  from = "/mpp/*"
+  status = 200
