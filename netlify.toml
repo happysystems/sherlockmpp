@@ -1,5 +1,5 @@
 [build]
-  publish = "mpp/public"  # Specify the directory to publish (mpp/public)
+  publish = "mpp"  # Set the base directory to 'mpp' to include both public and fun
 
 [[redirects]]
   from = "/mpp/*"
