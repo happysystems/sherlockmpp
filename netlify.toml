@@ -1,7 +1,16 @@
 [build]
-  publish = "mpp"  # Set the base directory to 'mpp' to include both public and fun
+  publish = "mpp"  # Root folder for the site is `mpp/`, this includes both public/ and fun/
 
+# Serve public folder at a separate path
 [[redirects]]
-  from = "/mpp/*"
-  to = "/:splat"
+  from = "/public/*"
+  to = "/mpp/public/:splat"
   status = 200
+  force = true
+
+# Serve fun folder at a separate path
+[[redirects]]
+  from = "/fun/*"
+  to = "/mpp/fun/:splat"
+  status = 200
+  force = true
