@@ -1,16 +1,13 @@
 [build]
-  publish = "mpp"  # Root folder for the build is mpp/ (this includes public/ and fun/)
+  # Set the folder to publish as the root of your project
+  publish = "/"
 
-# Redirects for public/ folder (for static content)
-[[redirects]]
-  from = "/public/*"
-  to = "/mpp/public/:splat"
-  status = 200
-  force = true
+  # Optional: Add a build command if you need it (e.g., for compiling assets)
+  # If no build is required, you can leave it out or set it as "echo 'no build'"
+  command = "echo 'no build'"
 
-# Redirects for fun/ folder (for other content)
 [[redirects]]
-  from = "/fun/*"
-  to = "/mpp/fun/:splat"
+  from = "/mpp/*"
+  to = "/mpp/:splat"
   status = 200
   force = true
