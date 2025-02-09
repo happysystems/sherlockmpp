@@ -1,8 +1,7 @@
 [build]
-  publish = "mpp"
-  command = "echo 'No build command'"
+  publish = "mpp/public"  # Specify the directory to publish (mpp/public)
 
 [[redirects]]
   from = "/mpp/*"
-    to = "/mpp/:splat"
+  to = "/:splat"
   status = 200
