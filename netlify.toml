@@ -1,30 +1,13 @@
 [build]
-  # Set the folder to publish as the root of your project
-  publish = "/"
+  # Tell Netlify to use the public folder as the root directory for serving files
+  publish = "public"
 
-  # Optional: Add a build command if you need it (e.g., for compiling assets)
+  # Optional: If you need to run a build command, add it here (e.g., for compiling assets)
   command = "echo 'no build'"
 
 [[redirects]]
-  from = "/mpp/*"
-  to = "/mpp/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/public/*"
-  to = "/public/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/fun/*"
-  to = "/fun/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/protocol/*"
-  to = "/protocol/:splat"
+  # Optionally redirect any other paths to the public folder
+  from = "/*"
+  to = "/:splat"
   status = 200
   force = true
