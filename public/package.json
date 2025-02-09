@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "Ives van Hoorne",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.1",
+    "express-ws": "^5.0.2",
+    "form-data": "^4.0.1",
+    "javascript-obfuscator": "^4.1.1",
+    "level": "^9.0.0",
+    "mime-db": "^1.53.0",
+    "uwebsockets": "^2.2.2",
+    "uwebsockets.js": "^19.0.0-docs",
+    "ws": "^8.18.0"
+  }
+}
