@@ -1,4 +1,0 @@
-channel in db can be like
-{time: Number, settings: settings}
-chat can be 
-{time: Number, chat: []}
