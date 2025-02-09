@@ -1,6 +1,8 @@
 [build]
   # Set the folder to publish as the root of your project
   publish = "./public"
+    publish = "./fun"
+      publish = "./protocol"
 
   # Optional: Add a build command if you need it (e.g., for compiling assets)
   # If no build is required, you can leave it out or set it as "echo 'no build'"
