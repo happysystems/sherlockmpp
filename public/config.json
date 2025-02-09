@@ -42,7 +42,7 @@
 	"maxBan": 18000000,
 	"announceIds": true,
 	"buffer": 0,
-	"uws": true,
+	"uws": false,
 	"p": true,
 	"antibot": true,
 	"tick": true,
